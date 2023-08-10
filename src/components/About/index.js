@@ -8,7 +8,6 @@ export const About = () => {
 
     const [textClass, setTextClass] = useState('text-animate')
     const aboutStr = ('About Me').split('')
-//   const posArr = ('web developer.').split('')
     useEffect(() => {
         const timeout = setTimeout(() => {
         setTextClass('text-animate-hover')
