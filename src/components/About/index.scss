@@ -1,0 +1,30 @@
+.about-p {
+    &::before {
+        color: #ffd700;
+        content: '<about-me>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        margin-top: -20px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+
+    &::after {
+        color: #ffd700;
+        content: '<about-me />';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        position: absolute;
+        margin-left: 15px;
+        left: -30px;
+        bottom: -20px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
+}
+
+.about-text {
+    font-size: 80px;
+}

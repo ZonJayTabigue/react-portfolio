@@ -1,0 +1,90 @@
+.home-page {
+    .zon-pic {
+        width: 400px;
+        height: 400px;
+        animation:  anim ease 2.5s;
+        top: 200px;
+        left: -1000px;
+        z-index: 1;
+        position: relative;
+        animation-fill-mode: forwards;
+
+        @keyframes anim {
+            0% {opacity:1; left:-1000px; top: 200px;}
+            100% {opacity:1; left:1000px; top: 200px;}
+        }
+    }
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-70%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 75px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &::before {
+            content: '<zon>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 28px;
+            position: absolute;
+            margin-top: -40px;
+            left: 10px;
+            opacity: 0.6;
+        }
+
+        &::after {
+            content: '<zon/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 28px;
+            position: absolute;
+            margin-top: 58px;
+            left: 10px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+
+        .zon-name {
+            color: #ffd700;
+        }
+
+        // .intro-text {
+        //     margin-left: 10%;
+        // }
+
+        // .zon-position {
+        //     color: #ffd700;
+        // }
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 2px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        margin-left: auto;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
+    }
+}
